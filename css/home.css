@@ -114,7 +114,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  height: 16.6vh;
+  height: 25vh;
   padding-top: 1rem;
   border-radius: 8px 8px 0 0;
 }
@@ -135,6 +135,10 @@ footer .fa-facebook, .fa-instagram, .fa-twitter {
 
 .fa-twitter:hover {
   color: lightskyblue;
+}
+
+.cards {
+	margin-bottom: 30px;
 }
 
 @media screen and (max-width: 414px) {
