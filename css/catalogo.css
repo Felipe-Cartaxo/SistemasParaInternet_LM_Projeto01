@@ -52,13 +52,10 @@ header ul{
   list-style-type: none;
 }
 
-header li a {
+header .menu ul li a {
   color: white;
 }
 
-header li a .icone-header {
-  display: none;
-}
 
 /* -------------------------- MAIN -------------------------- */
 
@@ -238,6 +235,10 @@ section a{
   color:#7159c1
 }
 
+#reticencias {
+  display: none;
+}
+
 /* -------------------------- footer -------------------------- */
 
 footer {
@@ -368,6 +369,9 @@ footer h6 {
     background: #392d62;
     color: white;
   }
+  #reticencias {
+  display: block;
+}
 }
 
 @media screen and (min-width: 1310px) {
@@ -378,10 +382,8 @@ footer h6 {
   header a{
     text-decoration: none;
   }
-  header li a:hover{
+  header li a:hover {
     text-decoration: underline;
-    display: flex;
-    flex-wrap: wrap;
   }
   .container {
     grid-template-columns: auto auto auto auto;

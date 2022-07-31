@@ -8,10 +8,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: white;
+  background-color: #f1f1f1;
 }
 
-/* --- Header ---*/
+/* ------------------- Header ------------------------*/
 
 header {
   background-color: #392d62;
@@ -51,44 +51,10 @@ header li a:hover {
   text-decoration: underline;
 }
 
-/* --- Main ---*/
+/* -------------------- Main -----------------------*/
 
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.6fr;
-  grid-template-rows: repeat(3, auto);
-  gap: 2rem 2rem;
-  text-align: center;
-}
-
-.trabalheConosco {
-  grid-column: 1/3;
-  grid-row: 1/1;
-}
-
-.nossasVagas {
-  grid-column: 1/3;
-  grid-row: 2/2;
-}
-
-.nossosProgramas {
-  grid-column: 1/3;
-  grid-row: 3/3;
-}
-
-.sobreNossaEmpresa {
-  grid-column: 3/3;
-  grid-row: 1/2;
-}
-
-.saibaMais {
-  grid-column: 3/3;
-  grid-row: 2/2;
-}
-
-.valores {
-  grid-column: 3/3;
-  grid-row: 3/3;
+.trabalheConoscoPage {
+  margin: 2rem;
 }
 
 .trabalheConosco, .nossasVagas, .nossosProgramas {
@@ -96,18 +62,18 @@ header li a:hover {
   margin-right: 5rem;
 }
 
-.sobreNossaEmpresa, .saibaMais, .valores {
-  text-align: justify;
+.sobreNossaEmpresa, .saibaMais, .forms {
+  text-align: left;
   margin-right: 3rem;
 }
 
-.trabalheConoscoPage {
-  margin: 2rem;
+.trabalheConosco h2, .nossasVagas h2, .nossosProgramas h2, .sobreNossaEmpresa h3 {
+  padding-top: 2rem;
 }
 
 .trabalheConosco h4 {
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 5rem;
 }
 
 .trabalheConosco img, .nossasVagas img, .nossosProgramas img {
@@ -119,12 +85,71 @@ header li a:hover {
   margin-bottom: 3rem;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.6fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 2rem 2rem;
+  text-align: center;
+}
+
+.trabalheConosco {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.nossasVagas {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.nossosProgramas {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.sobreNossaEmpresa {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.forms {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.saibaMais {
+  grid-column: 3/3;
+  grid-row: 3/3;
+}
+
+.nossosProgramas p {
+  text-align: left;
+}
+
+.nossosProgramas a {
+  float: right;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.forms label {
+  font-weight: bold;
+}
+
+/* ---------- Estilização dos botões ------------*/
+
 .btnBancoTalentos {
   margin-top: 2rem;
   text-align: center;
 }
 
-.btnBancoTalentos a{
+.btnBancoTalentos a, .nossasVagasLinks a, .nossosProgramasLinks a, .forms a {
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -133,12 +158,12 @@ header li a:hover {
   padding: 8px;
 }
 
-.btnBancoTalentos a:visited {
+.btnBancoTalentos a:visited, .nossasVagasLinks a:visited, .nossosProgramasLinks a:visited, .forms a:visited {
   color: white;
   background-color: #392d62;
 }
 
-.btnBancoTalentos a:hover {
+.btnBancoTalentos a:hover, .nossasVagasLinks a:hover, .nossosProgramasLinks a:hover, .forms a:hover {
   color: black;
   background-color:white;
   border: 1px solid #392d62;
@@ -156,46 +181,15 @@ header li a:hover {
   font-weight: 400;
 }
 
-.nossasVagasLinks a, .nossasVagasLinks a:visited {
-  text-decoration: none;
-  color: black;
+.forms a {
+  margin-top: 1rem;
 }
 
-.nossasVagasLinks a:hover {
-  text-decoration: underline;
-}
-
-.nossosProgramas p {
-  text-align: left;
-}
-
-.nossosProgramas a {
-  float: right;
-}
-
-.nossosProgramas a, .nossosProgramas a:visited {
+.saibaMais a {
   text-decoration: none;
 }
 
-.nossosProgramas a:hover {
-  text-decoration: underline;
-}
-
-.nossosProgramas p {
-  text-align: left;
-}
-
-.nossosProgramasLinks a, .nossosProgramasLinks a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.nossosProgramasLinks a:hover {
-  text-decoration: underline;
-}
-
-.saibaMais a, .saibaMais a:visited {
-  text-decoration: none;
+.saibaMais a:visited {
   color: black;
 }
 
@@ -203,16 +197,7 @@ header li a:hover {
   text-decoration: underline;
 }
 
-.valores ul {
-  list-style-type: none;
-}
-
-/*.verticalLine {
-  border-left: 2px solid black;
-  padding-left: 1rem;
-}*/
-
-/* --- Footer ---*/
+/* -------------------- Footer ---------------------- */
 
 footer {
   background-color: black;
@@ -255,3 +240,74 @@ footer p {
 footer h6 {
   padding: 0.5rem;
 }
+
+/*---------------- Responsividade ------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .trabalheConosco, .nossasVagas, .nossosProgramas, .sobreNossaEmpresa, .saibaMais, .forms {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  
+  .trabalheConosco img, .nossasVagas img, .nossosProgramas img {
+    width: 80%;
+  }
+
+  .nossasVagasLinks a, .nossosProgramasLinks a {
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .forms a {
+    margin-top: 1rem;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 3rem;
+  }
+
+  .trabalheConosco {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+
+  .nossasVagas {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+
+  .nossosProgramas {
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+
+  .sobreNossaEmpresa {
+    grid-column: 1/2;
+    grid-row: 4/4;
+  }
+
+  .saibaMais {
+    grid-column: 1/2;
+    grid-row: 5/5;
+  }
+
+  .forms {
+    grid-column: 1/2;
+    grid-row: 6/6;
+  }
+}
+
+/*@media screen and (max-width: 425px) {
+  .nossasVagas a, .nossosProgramas a{
+    float: none;
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 0.5rem;
+    align-content: center;
+  }
+}*/

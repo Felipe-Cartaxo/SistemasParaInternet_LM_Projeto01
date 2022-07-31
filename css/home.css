@@ -15,7 +15,6 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5%;
-    /* padding: 10rem; */
     height: 55vh;
     text-align: center;
 }
@@ -33,8 +32,6 @@ main h1 {
     font-size: 5rem;
     text-align: center;
     text-shadow: 1px 1px 3px black;
-    /* border: 1px solid white;
-    border-bottom: transparent; */
     padding-top: 5rem;
     color: white;
 }
@@ -52,7 +49,6 @@ main button {
     border: 1px solid white;
     border-radius: 8px;
     padding: 0.5rem;
-    /* margin: auto 45% auto; */
     color: white;
     font-size: 2rem;
     margin-top: 3rem;
@@ -62,7 +58,6 @@ main button {
 main button:hover {
     background-color: white;
     color: #392d62;
-    /*text-decoration: underline;*/
     border: 1px solid #392d62;
 }
 
@@ -80,9 +75,10 @@ main ul li {
     color: white;
 }
 
-main ul li:hover {
+main ul li a:hover {
     background-color: #392d62;
     color: white;
+    border-radius: 8px;
 }
 
 main ul li:visited {
@@ -90,24 +86,21 @@ main ul li:visited {
 }
 
 .cards {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 29%; */
     display: flex;
     background-color: #f1f1f1;
     margin: 1rem;
     padding: 1rem;
     border: 1px solid white;
+    height: 25vh;
 }
 
 .venda, .compra, .aluguel {
     margin: auto;
-    width: 25%;
+    width: 20%;
     justify-content: space-around;
     text-align: center;
     background-color: #f1f1f1;
     color: black;
-    /* padding: 1rem; */
     border-radius: 8px;
 }
 
@@ -117,14 +110,13 @@ main ul li:visited {
 }
 
 footer {
-    /* margin-top: 9rem; */
     background: black;
     color: white;
     text-align: center;
     padding: 1rem;
-    height: 27vh;
-    padding-top: 5rem;
-    border-radius: 8px;
+    height: 16.6vh;
+    padding-top: 1rem;
+    border-radius: 8px 8px 0 0;
 }
 
 footer .fa-facebook, .fa-instagram, .fa-twitter {
@@ -153,10 +145,12 @@ footer .fa-facebook, .fa-instagram, .fa-twitter {
 
     main h1 {
         font-size: 3rem;
+        padding-top: 2rem;
     }
 
     main button {
         font-size: 1.5rem;
+        margin-top: 2.5rem;
     }
 
     main ul {
@@ -166,9 +160,17 @@ footer .fa-facebook, .fa-instagram, .fa-twitter {
     .cards {
         display: block;
         width: 90%;
+        border: #f1f1f1;
     }
 
     .venda, .compra, .aluguel {
         width: 90%;
+        padding: 0.5rem;
+    }
+
+    footer {
+      margin-top: 19rem;
+      padding-top: 1rem;
+      height: 18.7vh;
     }
 }
